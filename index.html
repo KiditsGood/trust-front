@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <title>Title</title>
@@ -10,8 +11,11 @@
 <header class="header">
     <div class="container">
         <a href="index.html" class="logo">
-            <svg>
+            <svg class="logo__desktop">
                 <use xlink:href="sprite.svg#logo"></use>
+            </svg>
+            <svg class="logo__mobile">
+                <use xlink:href="sprite.svg#mobile-logo"></use>
             </svg>
         </a>
         <nav class="nav">
@@ -26,6 +30,19 @@
         <a href="" class="header__contacts">
             Офисы и контакты
         </a>
+        <div class="mobile__buttons">
+            <a href="" class="mobile__fav">
+                <svg>
+                    <use xlink:href="sprite.svg#like"></use>
+                </svg>
+            </a>
+            <div id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
 </header>
 <main class="wrapper">
@@ -43,6 +60,50 @@
                             <use xlink:href="sprite.svg#down_arrow">Квартира в новостройке</use>
                         </svg>
                     </div>
+                    <div class="setting__hidden">
+                        <div class="setting__hidden-buttons">
+                            <button type="button" class="setting__button">Жилая</button>
+                            <button type="button" class="setting__button">Коммерческая</button>
+                        </div>
+                        <div class="setting__hidden-item">
+                            <div class="setting__check">
+                                <input id="s1" type="checkbox" class="setting__check-input">
+                                <label for="s1" class="setting__check-label">Квартира в новостройке</label>
+                            </div>
+                            <div class="setting__check">
+                                <input id="s2" type="checkbox" class="setting__check-input">
+                                <label for="s2" class="setting__check-label">Квартира во вторичке</label>
+                            </div>
+                        </div>
+                        <div class="setting__hidden-item">
+                            <div class="setting__check">
+                                <input id="s3" type="checkbox" class="setting__check-input">
+                                <label for="s3" class="setting__check-label">Комната</label>
+                            </div>
+                            <div class="setting__check">
+                                <input id="s4" type="checkbox" class="setting__check-input">
+                                <label for="s4" class="setting__check-label">Доля</label>
+                            </div>
+                        </div>
+                        <div class="setting__hidden-item">
+                            <div class="setting__check">
+                                <input id="s5" type="checkbox" class="setting__check-input">
+                                <label for="s5" class="setting__check-label">Дом или дача</label>
+                            </div>
+                            <div class="setting__check">
+                                <input id="s6" type="checkbox" class="setting__check-input">
+                                <label for="s6" class="setting__check-label">Часть дома</label>
+                            </div>
+                            <div class="setting__check">
+                                <input id="s7" type="checkbox" class="setting__check-input">
+                                <label for="s7" class="setting__check-label">Таунхаус</label>
+                            </div>
+                            <div class="setting__check">
+                                <input id="s8" type="checkbox" class="setting__check-input">
+                                <label for="s8" class="setting__check-label">Участок</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="calc__field-room">
                     <div class="room__visible">
@@ -55,6 +116,14 @@
                 <div class="calc__field-cost">
                     <div class="cost__visible">
                         <p class="setting__visible-text">2,3 — 4,7 млн</p>
+                    </div>
+                    <div class="cost__hidden">
+                        <div class="cost__hidden-input">
+                            <input type="text" class="cost__hidden-input--price" placeholder="от">
+                        </div>
+                        <div class="cost__hidden-input">
+                            <input type="text" class="cost__hidden-input--price" placeholder="до" value="4 700 000">
+                        </div>
                     </div>
                 </div>
                 <div class="calc__field-area">
@@ -488,5 +557,7 @@
 <script src="js/sliders.js"></script>
 <script src="js/header.js"></script>
 <script src="js/knowHandler.js"></script>
+<script src="js/searchForm.js"></script>
+<script src="js/burger.js"></script>
 </body>
 </html>

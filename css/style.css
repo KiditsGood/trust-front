@@ -48,9 +48,14 @@ h1{
     width: 265px;
     height: 68px;
 }
-.logo svg{
+.logo__desktop{
     width: 265px;
     height: 68px;
+}
+.logo__mobile{
+    display: none;
+    width: 119px;
+    height: 18px;
 }
 .nav{
     display: flex;
@@ -130,6 +135,11 @@ h1{
     background: white;
     border-radius: 4px 0 0 4px;
     border-right: 1px solid #DEDEDE;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.setting__visible.open{
+    border-radius: 4px 0 0 0;
 }
 .setting__visible svg{
     width: 14px;
@@ -237,6 +247,130 @@ h1{
     font-size: 14px;
     line-height: 20px;
     color: white;
+}
+
+.calc__field-settings, .calc__field-cost{
+    position: relative;
+}
+.setting__hidden, .cost__hidden{
+    position: absolute;
+    width: calc(100% - 1px);
+    background: white;
+    left: 0;
+    top: 68px;
+    box-sizing: border-box;
+    padding: 26px 22px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    border-radius: 0 0 4px 4px;
+    display: none;
+    flex-direction: column;
+    gap: 26px;
+}
+.setting__hidden[style*="display: block"]{
+    display:flex!important;
+}
+.cost__hidden[style*="display: block"]{
+    display:flex!important;
+}
+.setting__hidden-buttons{
+    display: flex;
+    align-items: stretch;
+    gap: 1px;
+}
+.setting__button{
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    padding: 15px 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D2D2D;
+}
+.setting__button:hover{
+    background: #DC1919;
+    color: white;
+    border-color: #DC1919;
+}
+.setting__button.active{
+    background: #DC1919;
+    color: white;
+    border-color: #DC1919;
+}
+.setting__button:first-child{
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+.setting__button:first-child:after{
+    content: '';
+    background: #D8D8D8;
+    height: calc(100% + 2px);
+    width: 1px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+.setting__button:last-child{
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+}
+.setting__hidden-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid #DFDFDF;
+    padding-bottom: 26px;
+}
+.setting__check-input{
+    display: none;
+}
+.setting__check-input:checked + .setting__check-label:before{
+    background: url("../img/check.svg") no-repeat center/contain;
+    background-color: #DC1919;
+}
+.setting__check-label{
+    font-size: 14px;
+    line-height: 17px;
+    color: #1A1A1A;
+    position: relative;
+    padding-left: 31px;
+    transition: 0.2s;
+}
+.setting__check-label:hover{
+    color: #DC1919;
+    cursor: pointer;
+}
+.setting__check-label:before{
+    content: '';
+    background: #ECECEC;
+    width: 21px;
+    height: 21px;
+    border-radius: 4px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    transition: 0.2s;
+}
+.cost__visible{
+    cursor: pointer;
+}
+.cost__hidden-input{
+    position: relative;
+}
+.cost__hidden-input:after{
+    content: '₽';
+    font-size: 14px;
+    line-height: 15px;
+    color: #2D2D2D;
+    position: absolute;
+    right: 26px;
+    top: 20px;
+}
+.cost__hidden-input--price{
+    width: 100%;
+    padding: 20px 26px;
+    box-sizing: border-box;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
 }
 
 /* Section */
@@ -789,4 +923,116 @@ h1{
     height: 26px;
     fill: #7E7E7E;
     transition: 0.2s;
+}
+
+/* Mobile Elems */
+
+.mobile__buttons{
+    display: none;
+}
+
+@media (max-width: 767px){
+    section, header > .container, footer{
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .nav, .header__contacts, .logo__desktop{
+        display: none;
+    }
+    .logo__mobile{
+        display: block;
+    }
+    .header{
+        padding: 24px 0;
+        border-bottom: 1px solid #DADADA;
+    }
+    .logo{
+        width: 119px;
+        height: 18px;
+    }
+    #burger {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #burger span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #C9C9C9;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    #burger span:nth-child(1) {
+        top: 0px;
+    }
+    #burger span:nth-child(2),
+    #burger span:nth-child(3) {
+        top: 8px;
+    }
+    #burger span:nth-child(4) {
+        top: 16px;
+    }
+    #burger.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    #burger.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    #burger.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    #burger.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    .mobile__buttons{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .mobile__fav{
+        display: block;
+    }
+    .mobile__fav svg{
+        width: 21px;
+        height: 19px;
+        fill: #DCDCDC;
+    }
+    .calc{
+        padding: 0 15px;
+        margin: 96px 0 25px;
+        background: none;
+    }
+    .calc__text-title{
+        font-size: 27px;
+        line-height: 30px;
+        color: #434343;
+    }
+    .calc__text-desc{
+        display: none;
+    }
+    .calc > .container{
+        gap: 20px;
+    }
+    .calc__field{
+        flex-wrap: wrap;
+    }
+    .calc__field-button{
+        position: unset;
+        width: 100%;
+        max-width: 400px;
+    }
 }
