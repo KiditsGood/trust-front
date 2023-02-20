@@ -1,0 +1,48 @@
+.profile-tabs{
+  max-width: 1280px;
+  margin: 40px auto 0;
+
+  & > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 796px;
+  }
+
+  &__left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &-item{
+      font-size: 14px;
+      line-height: 19px;
+      color: #727272;
+      position: relative;
+
+      &:after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        bottom: -15px;
+        left: 50%;
+        right: 50%;
+        background: #D92929;
+        transition: 0.3s;
+        user-select: none;
+        cursor: default;
+      }
+
+      &.active:after{
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__create{
+    font-size: 14px;
+    line-height: 19px;
+    color: #D92929;
+  }
+}

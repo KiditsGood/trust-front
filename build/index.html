@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Траст">
+	<meta name="keywords" content="Траст">
+	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Траст</title>
+</head>
+
+
+<body>
+<header class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <svg>
+                <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <nav class="nav">
+            <button class="nav__item">Каталог недвижимости</button>
+            <a href="" class="nav__item">Ипотека</a>
+            <a href="" class="nav__item">О нас</a>
+            <a href="" class="nav__item">Карьера</a>
+            <a href="" class="nav__item">Отзывы</a>
+            <a href="" class="nav__item">Вакансии</a>
+            <a href="" class="nav__item">Прочее</a>
+        </nav>
+        <a href="" class="header__contacts">
+            Офисы и контакты
+        </a>
+    </div>
+</header>
+<main class="wrapper">
+	<section class="calc">
+	<div class="container">
+		<div class="calc__text">
+			<p class="calc__text-title">Сотрудничество начинается с доверия</p>
+			<p class="calc__text-desc">«Траст» входит в состав Российской Гильдии Риэлторов. Стандарты качества услуг компании сертифицированы, деятельность застрахована.</p>
+		</div>
+		<form class="calc__field">
+			<div class="calc__field-settings">
+				<div class="setting__visible">
+					<p class="setting__visible-text">Квартира в новостройке</p>
+					<svg>
+						<use xlink:href="img/sprite.svg#down_arrow">Квартира в новостройке</use>
+					</svg>
+				</div>
+				<div class="setting__hidden">
+					<div class="setting__hidden-buttons">
+						<button type="button" class="setting__button">Жилая</button>
+						<button type="button" class="setting__button">Коммерческая</button>
+					</div>
+					<div class="setting__hidden-item">
+						<div class="setting__check">
+							<input id="s1" type="checkbox" class="setting__check-input">
+							<label for="s1" class="setting__check-label">Квартира в новостройке</label>
+						</div>
+						<div class="setting__check">
+							<input id="s2" type="checkbox" class="setting__check-input">
+							<label for="s2" class="setting__check-label">Квартира во вторичке</label>
+						</div>
+					</div>
+					<div class="setting__hidden-item">
+						<div class="setting__check">
+							<input id="s3" type="checkbox" class="setting__check-input">
+							<label for="s3" class="setting__check-label">Комната</label>
+						</div>
+						<div class="setting__check">
+							<input id="s4" type="checkbox" class="setting__check-input">
+							<label for="s4" class="setting__check-label">Доля</label>
+						</div>
+					</div>
+					<div class="setting__hidden-item">
+						<div class="setting__check">
+							<input id="s5" type="checkbox" class="setting__check-input">
+							<label for="s5" class="setting__check-label">Дом или дача</label>
+						</div>
+						<div class="setting__check">
+							<input id="s6" type="checkbox" class="setting__check-input">
+							<label for="s6" class="setting__check-label">Часть дома</label>
+						</div>
+						<div class="setting__check">
+							<input id="s7" type="checkbox" class="setting__check-input">
+							<label for="s7" class="setting__check-label">Таунхаус</label>
+						</div>
+						<div class="setting__check">
+							<input id="s8" type="checkbox" class="setting__check-input">
+							<label for="s8" class="setting__check-label">Участок</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calc__field-room">
+				<div class="room__visible">
+					<p class="setting__visible-text">Комнатность</p>
+					<svg>
+						<use xlink:href="img/sprite.svg#down_arrow">Квартира в новостройке</use>
+					</svg>
+				</div>
+				<div class="room__hidden">
+					<div class="room__hidden-buttons">
+						<button type="button" class="room__hidden-buttons_item">1</button>
+						<button type="button" class="room__hidden-buttons_item">2</button>
+						<button type="button" class="room__hidden-buttons_item">3</button>
+						<button type="button" class="room__hidden-buttons_item">4</button>
+						<button type="button" class="room__hidden-buttons_item">5+</button>
+					</div>
+					<div class="room__hidden-checkbox">
+						<div class="setting__check">
+							<input id="r1" type="checkbox" class="setting__check-input">
+							<label for="r1" class="setting__check-label">Студия</label>
+						</div>
+						<div class="setting__check">
+							<input id="r2" type="checkbox" class="setting__check-input">
+							<label for="r2" class="setting__check-label">Свободная планировка</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calc__field-cost">
+				<div class="cost__visible">
+					<p class="setting__visible-text">2,3 — 4,7 млн</p>
+				</div>
+				<div class="cost__hidden">
+					<div class="cost__hidden-input">
+						<input type="text" class="cost__hidden-input--price" placeholder="от">
+					</div>
+					<div class="cost__hidden-input">
+						<input type="text" class="cost__hidden-input--price" placeholder="до" value="4 700 000">
+					</div>
+				</div>
+			</div>
+			<div class="calc__field-area">
+				<div class="area__visible">
+					<p class="setting__visible-text">Район</p>
+				</div>
+			</div>
+			<button class="calc__field-button">Поиск</button>
+		</form>
+		<div class="bonus">
+	<div class="bonus__item">
+		<div class="bonus__item-text">
+			<p class="bonus__item-text--name">Ипотека онлайн</p>
+			<p class="bonus__item-text--desc">Поможем получить одобрение банков, чтобы вы могли</p>
+		</div>
+		<svg>
+			<use xlink:href="img/sprite.svg#right_arrow"></use>
+		</svg>
+	</div>
+	<div class="bonus__item">
+		<div class="bonus__item-text">
+			<p class="bonus__item-text--name">Поменяем на новую</p>
+			<p class="bonus__item-text--desc">Поможем получить одобрение банков, чтобы вы могли</p>
+		</div>
+		<svg>
+			<use xlink:href="img/sprite.svg#right_arrow"></use>
+		</svg>
+	</div>
+	<div class="bonus__item">
+		<div class="bonus__item-text">
+			<p class="bonus__item-text--name">Оценка стоимости</p>
+			<p class="bonus__item-text--desc">Поможем получить одобрение банков, чтобы вы могли</p>
+		</div>
+		<svg>
+			<use xlink:href="img/sprite.svg#right_arrow"></use>
+		</svg>
+	</div>
+</div>
+	</div>
+</section>
+	<section class="question">
+	<div class="question__item active">
+		<div class="question__item-top">
+			<div class="question__item-top--text">
+				<p class="question__item-top--text_name">Что вы хотите сделать?</p>
+				<p class="question__item-top--text_desc">«Траст» входит в состав Российской Гильдии Риэлторов. Стандарты качества услуг компании сертифицированы, деятельность застрахована.</p>
+			</div>
+			<div class="answer">
+				<button class="answer__item">Купить недвижимость</button>
+				<button class="answer__item">Обменять недвижимость</button>
+				<button class="answer__item">Продать недвижимость</button>
+				<button class="answer__item">Еще что-то сделать</button>
+			</div>
+		</div>
+		<div class="question__item-bot">
+			<p class="question__num">
+				Вопрос
+				<span class="question__num-first">1</span>
+				из
+				<span class="question__num-second">5</span>
+			</p>
+			<div class="question__buttons">
+				<button class="question__buttons-prev">
+					<svg>
+						<use xlink:href="img/sprite.svg#left_arrow"></use>
+					</svg>
+				</button>
+				<button class="question__buttons-next">Далее</button>
+			</div>
+		</div>
+	</div>
+	<div class="question__item">
+		<div class="question__item-top">
+			<div class="question__item-top--text">
+				<p class="question__item-top--text_name">Что вы хотите сделать?</p>
+				<p class="question__item-top--text_desc">«Траст» входит в состав Российской Гильдии Риэлторов. Стандарты качества услуг компании сертифицированы, деятельность застрахована.</p>
+			</div>
+			<div class="answer">
+				<button class="answer__item">Купить недвижимость</button>
+				<button class="answer__item">Обменять недвижимость</button>
+				<button class="answer__item">Продать недвижимость</button>
+				<button class="answer__item">Еще что-то сделать</button>
+			</div>
+		</div>
+		<div class="question__item-bot">
+			<p class="question__num">
+				Вопрос
+				<span class="question__num-first">1</span>
+				из
+				<span class="question__num-second">5</span>
+			</p>
+			<div class="question__buttons">
+				<button class="question__buttons-prev">
+					<svg>
+						<use xlink:href="img/sprite.svg#left_arrow"></use>
+					</svg>
+				</button>
+				<button class="question__buttons-next">Далее</button>
+			</div>
+		</div>
+	</div>
+	<div class="question__item">
+		<div class="question__item-top">
+			<div class="question__item-top--text">
+				<p class="question__item-top--text_name">Что вы хотите сделать?</p>
+				<p class="question__item-top--text_desc">«Траст» входит в состав Российской Гильдии Риэлторов. Стандарты качества услуг компании сертифицированы, деятельность застрахована.</p>
+			</div>
+			<div class="answer">
+				<button class="answer__item">Купить недвижимость</button>
+				<button class="answer__item">Обменять недвижимость</button>
+				<button class="answer__item">Продать недвижимость</button>
+				<button class="answer__item">Еще что-то сделать</button>
+			</div>
+		</div>
+		<div class="question__item-bot">
+			<p class="question__num">
+				Вопрос
+				<span class="question__num-first">1</span>
+				из
+				<span class="question__num-second">5</span>
+			</p>
+			<div class="question__buttons">
+				<button class="question__buttons-prev">
+					<svg>
+						<use xlink:href="img/sprite.svg#left_arrow"></use>
+					</svg>
+				</button>
+				<button class="question__buttons-next">Далее</button>
+			</div>
+		</div>
+	</div>
+	<div class="question__item">
+		<div class="question__item-top">
+			<div class="question__item-top--text">
+				<p class="question__item-top--text_name">Что вы хотите сделать?</p>
+				<p class="question__item-top--text_desc">«Траст» входит в состав Российской Гильдии Риэлторов. Стандарты качества услуг компании сертифицированы, деятельность застрахована.</p>
+			</div>
+			<div class="answer">
+				<button class="answer__item">Купить недвижимость</button>
+				<button class="answer__item">Обменять недвижимость</button>
+				<button class="answer__item">Продать недвижимость</button>
+				<button class="answer__item">Еще что-то сделать</button>
+			</div>
+		</div>
+		<div class="question__item-bot">
+			<p class="question__num">
+				Вопрос
+				<span class="question__num-first">1</span>
+				из
+				<span class="question__num-second">5</span>
+			</p>
+			<div class="question__buttons">
+				<button class="question__buttons-prev">
+					<svg>
+						<use xlink:href="img/sprite.svg#left_arrow"></use>
+					</svg>
+				</button>
+				<button class="question__buttons-next">Далее</button>
+			</div>
+		</div>
+	</div>
+	<div class="question__item">
+		<div class="question__item-top">
+			<div class="question__item-top--text">
+				<p class="question__item-top--text_name">Что вы хотите сделать?</p>
+				<p class="question__item-top--text_desc">«Траст» входит в состав Российской Гильдии Риэлторов. Стандарты качества услуг компании сертифицированы, деятельность застрахована.</p>
+			</div>
+			<div class="answer">
+				<button class="answer__item">Купить недвижимость</button>
+				<button class="answer__item">Обменять недвижимость</button>
+				<button class="answer__item">Продать недвижимость</button>
+				<button class="answer__item">Еще что-то сделать</button>
+			</div>
+		</div>
+		<div class="question__item-bot">
+			<p class="question__num">
+				Вопрос
+				<span class="question__num-first">1</span>
+				из
+				<span class="question__num-second">5</span>
+			</p>
+			<div class="question__buttons">
+				<button class="question__buttons-prev">
+					<svg>
+						<use xlink:href="img/sprite.svg#left_arrow"></use>
+					</svg>
+				</button>
+				<button class="question__buttons-next">Далее</button>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="exclusive">
+	<div class="exclusive__top">
+		<div class="exclusive__top-text">
+			<p class="exclusive__top-text--title">Эксклюзивные варианты</p>
+			<p class="exclusive__top-text--desc">В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь, войти придётся самостоятельно.</p>
+		</div>
+		<a href="" class="exclusive__top-button">Все эксклюзивы</a>
+	</div>
+	<div class="exclusive__bot swiper">
+		<div class="swiper-wrapper">
+			<div class="exclusive__apart swiper-slide">
+				<img src="img/ex.jpg" alt="" class="exclusive__apart-image">
+				<div class="exclusive__apart-info">
+					<div class="exclusive__apart-info--left">
+						<p class="exclusive__apart-price">13 750 000 ₽</p>
+						<p class="exclusive__apart-chars">3-к квартира, 57м2, 12/15 эт.</p>
+						<p class="exclusive__apart-address">Коминтерновский район, Московский проспект,114</p>
+					</div>
+					<div class="exclusive__apart-info--right">
+						<button class="exclusive__apart-like">
+							<svg>
+								<use xlink:href="img/sprite.svg#like"></use>
+							</svg>
+						</button>
+						<button class="exclusive__apart-watch">Показать номер</button>
+					</div>
+				</div>
+				<p class="exclusive__apart-bonus">Кухня в подарок</p>
+			</div>
+			<div class="exclusive__apart swiper-slide">
+				<img src="img/ex.jpg" alt="" class="exclusive__apart-image">
+				<div class="exclusive__apart-info">
+					<div class="exclusive__apart-info--left">
+						<p class="exclusive__apart-price">13 750 000 ₽</p>
+						<p class="exclusive__apart-chars">3-к квартира, 57м2, 12/15 эт.</p>
+						<p class="exclusive__apart-address">Коминтерновский район, Московский проспект,114</p>
+					</div>
+					<div class="exclusive__apart-info--right">
+						<button class="exclusive__apart-like">
+							<svg>
+								<use xlink:href="img/sprite.svg#like"></use>
+							</svg>
+						</button>
+						<button class="exclusive__apart-watch">Показать номер</button>
+					</div>
+				</div>
+			</div>
+			<div class="exclusive__apart swiper-slide">
+				<img src="img/ex.jpg" alt="" class="exclusive__apart-image">
+				<div class="exclusive__apart-info">
+					<div class="exclusive__apart-info--left">
+						<p class="exclusive__apart-price">13 750 000 ₽</p>
+						<p class="exclusive__apart-chars">3-к квартира, 57м2, 12/15 эт.</p>
+						<p class="exclusive__apart-address">Коминтерновский район, Московский проспект,114</p>
+					</div>
+					<div class="exclusive__apart-info--right">
+						<button class="exclusive__apart-like">
+							<svg>
+								<use xlink:href="img/sprite.svg#like"></use>
+							</svg>
+						</button>
+						<button class="exclusive__apart-watch">Показать номер</button>
+					</div>
+				</div>
+			</div>
+			<div class="exclusive__apart swiper-slide">
+				<img src="img/ex.jpg" alt="" class="exclusive__apart-image">
+				<div class="exclusive__apart-info">
+					<div class="exclusive__apart-info--left">
+						<p class="exclusive__apart-price">13 750 000 ₽</p>
+						<p class="exclusive__apart-chars">3-к квартира, 57м2, 12/15 эт.</p>
+						<p class="exclusive__apart-address">Коминтерновский район, Московский проспект,114</p>
+					</div>
+					<div class="exclusive__apart-info--right">
+						<button class="exclusive__apart-like">
+							<svg>
+								<use xlink:href="img/sprite.svg#like"></use>
+							</svg>
+						</button>
+						<button class="exclusive__apart-watch">Показать номер</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="exclusive__nav prev">
+		<svg>
+			<use xlink:href="img/sprite.svg#left_slide"></use>
+		</svg>
+	</button>
+	<button class="exclusive__nav next">
+		<svg>
+			<use xlink:href="img/sprite.svg#right_slide"></use>
+		</svg>
+	</button>
+	<div class="exclusive__pagination"></div>
+</section>
+	<section class="pluses">
+	<div class="exclusive__top-text">
+		<p class="exclusive__top-text--title">Наши преимущества</p>
+		<p class="exclusive__top-text--desc">В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь, войти придётся самостоятельно.</p>
+	</div>
+	<div class="pluses__field">
+		<div class="pluses__field-item">
+			<img src="img/p1.png" alt="" class="pluses__field-item--icon">
+			<p class="pluses__field-item--name">Быстрый поиск</p>
+			<p class="pluses__field-item--desc">В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь</p>
+		</div>
+		<div class="pluses__field-item">
+			<img src="img/p2.png" alt="" class="pluses__field-item--icon">
+			<p class="pluses__field-item--name">Безопасная сделка</p>
+			<p class="pluses__field-item--desc">В данном случае я выступаю в роли Морфеуса — лишь указываю</p>
+		</div>
+		<div class="pluses__field-item">
+			<img src="img/p3.png" alt="" class="pluses__field-item--icon">
+			<p class="pluses__field-item--name">Продажа на 15% дороже</p>
+			<p class="pluses__field-item--desc">В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь</p>
+		</div>
+		<div class="pluses__field-item">
+			<img src="img/p4.png" alt="" class="pluses__field-item--icon">
+			<p class="pluses__field-item--name">Опытные агенты</p>
+			<p class="pluses__field-item--desc">В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь</p>
+		</div>
+	</div>
+</section>
+	<section class="know">
+	<div class="exclusive__top-text">
+		<p class="exclusive__top-text--title">У нас есть ответы</p>
+		<p class="exclusive__top-text--desc">В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь, войти придётся самостоятельно.</p>
+	</div>
+	<div class="know__field">
+		<div class="know__field-item">
+			<div class="know__visible">
+				<p class="know__visible-question">Какие услуги будут оказаны и сколько это стоит для покупателя или продавца?</p>
+				<button class="know__visible-show">
+					<svg>
+						<use xlink:href="img/sprite.svg#know_arrow"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="know__hidden">
+				<p class="know__hidden-item">Если вы поручаете риэлтору продать или купить объект недвижимости, у вас есть собственные ожидания по цене. Они могут быть адекватными, заниженными или завышенными, потому что вы не являетесь специалистом в этой области.</p>
+				<p class="know__hidden-item">Когда риэлтор называет вам цену, он должен ее обосновать с позиции рынка. Профессионал хорошо знает состояние и динамику рынка недвижимости вашего региона, владеет аналитическими и статистическими данными.</p>
+			</div>
+		</div>
+		<div class="know__field-item">
+			<div class="know__visible">
+				<p class="know__visible-question">Какие риски могут возникнуть при сделке?</p>
+				<button class="know__visible-show">
+					<svg>
+						<use xlink:href="img/sprite.svg#know_arrow"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="know__hidden">
+				<p class="know__hidden-item">Если вы поручаете риэлтору продать или купить объект недвижимости, у вас есть собственные ожидания по цене. Они могут быть адекватными, заниженными или завышенными, потому что вы не являетесь специалистом в этой области.</p>
+				<p class="know__hidden-item">Когда риэлтор называет вам цену, он должен ее обосновать с позиции рынка. Профессионал хорошо знает состояние и динамику рынка недвижимости вашего региона, владеет аналитическими и статистическими данными.</p>
+			</div>
+		</div>
+		<div class="know__field-item">
+			<div class="know__visible">
+				<p class="know__visible-question">Какие действия будут предприняты в случае возникновения непредвиденных обстоятельств?</p>
+				<button class="know__visible-show">
+					<svg>
+						<use xlink:href="img/sprite.svg#know_arrow"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="know__hidden">
+				<p class="know__hidden-item">Если вы поручаете риэлтору продать или купить объект недвижимости, у вас есть собственные ожидания по цене. Они могут быть адекватными, заниженными или завышенными, потому что вы не являетесь специалистом в этой области.</p>
+				<p class="know__hidden-item">Когда риэлтор называет вам цену, он должен ее обосновать с позиции рынка. Профессионал хорошо знает состояние и динамику рынка недвижимости вашего региона, владеет аналитическими и статистическими данными.</p>
+			</div>
+		</div>
+		<div class="know__field-item">
+			<div class="know__visible">
+				<p class="know__visible-question">Какие услуги будут оказаны и сколько это стоит для покупателя или продавца?</p>
+				<button class="know__visible-show">
+					<svg>
+						<use xlink:href="img/sprite.svg#know_arrow"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="know__hidden">
+				<p class="know__hidden-item">Если вы поручаете риэлтору продать или купить объект недвижимости, у вас есть собственные ожидания по цене. Они могут быть адекватными, заниженными или завышенными, потому что вы не являетесь специалистом в этой области.</p>
+				<p class="know__hidden-item">Когда риэлтор называет вам цену, он должен ее обосновать с позиции рынка. Профессионал хорошо знает состояние и динамику рынка недвижимости вашего региона, владеет аналитическими и статистическими данными.</p>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="news">
+  <div class="news__item">
+    <p class="news__item-pseudo">Рассказываем о полезном и интересном</p>
+    <p class="news__item-name">Новости и акции рынка недвижимости</p>
+    <p class="news__item-desc">В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь</p>
+    <a href="" class="news__item-all">Все эксклюзивы</a>
+  </div>
+  <div class="news__item">
+    <p class="news__item-pseudo">Объясним и покажем</p>
+    <p class="news__item-name">Проконсультируем бесплатно</p>
+    <p class="news__item-desc">В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь</p>
+    <a href="" class="news__item-all">Все эксклюзивы</a>
+  </div>
+</section>
+
+	<aside class="mini-catalog">
+	<div class="container">
+		<div class="mini-catalog__item">
+			<a href="/" class="mini-catalog__item-link fat">Все квартиры</a>
+			<a href="/" class="mini-catalog__item-link fat">Квартиры в новостройке</a>
+			<a href="/" class="mini-catalog__item-link fat">Квартиры во вторичке</a>
+			<a href="/" class="mini-catalog__item-link fat">Акции и скидки </a>
+		</div>
+		<div class="mini-catalog__item">
+			<a href="/" class="mini-catalog__item-link">Квартиры студии</a>
+			<a href="/" class="mini-catalog__item-link">1-комнатные квартиры</a>
+			<a href="/" class="mini-catalog__item-link">2-комнатные квартиры</a>
+			<a href="/" class="mini-catalog__item-link">3-комнатные квартиры</a>
+			<a href="/" class="mini-catalog__item-link">4-комнатные квартиры </a>
+			<a href="/" class="mini-catalog__item-link">Квартиры в Воронеже </a>
+		</div>
+		<div class="mini-catalog__item">
+			<a href="/" class="mini-catalog__item-link">Квартиры на правом берегу</a>
+			<a href="/" class="mini-catalog__item-link">Квартиры на левом берегу</a>
+			<a href="/" class="mini-catalog__item-link">Квартиры в Железнодорожном р-не</a>
+			<a href="/" class="mini-catalog__item-link">Квартиры в Советском р-не</a>
+			<a href="/" class="mini-catalog__item-link">Квартиры в Ленинском р-не</a>
+			<a href="/" class="mini-catalog__item-link">Квартиры в Коминтерновском р-не</a>
+		</div>
+		<div class="mini-catalog__loyalty">
+			<p class="mini-catalog__loyalty-title">Программа лояльности</p>
+			<p class="mini-catalog__loyalty-desc">Вступайте в клуб,
+				получайте бонусы
+				и скидки</p>
+			<a href="/" class="mini-catalog__loyalty-button">
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow_right"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+</aside>
+</main>
+<footer class="footer">
+	<div class="container">
+		<a href="/" class="logo">
+			<svg>
+				<use xlink:href="img/sprite.svg#footer_logo"></use>
+			</svg>
+		</a>
+		<nav class="nav">
+			<a href="" class="nav__item">Каталог недвижимости</a>
+			<a href="" class="nav__item">Ипотека</a>
+			<a href="" class="nav__item">О нас</a>
+			<a href="" class="nav__item">Карьера</a>
+			<a href="" class="nav__item">Отзывы</a>
+			<a href="" class="nav__item">Вакансии</a>
+			<a href="" class="nav__item">Прочее</a>
+		</nav>
+		<a href="" class="header__contacts">
+			Офисы и контакты
+		</a>
+	</div>
+	<div class="footer__bot">
+		<div class="container">
+			<p class="footer__policy">©2000-2022 Компания «Траст». Все права защищены. При использовании материалов гиперссылка обязательна.</p>
+			<a href="https://vk.com/" class="footer__link" target="_blank">
+				<svg>
+					<use xlink:href="img/sprite.svg#vk"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+</footer>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

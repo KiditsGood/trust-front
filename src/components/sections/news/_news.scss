@@ -1,0 +1,82 @@
+.news{
+  max-width: 1280px;
+  margin: 60px auto;
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+
+  @include media-xxl{
+    max-width: calc(100% - 40px);
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 25px 40px 50px;
+
+    &:last-child{
+      background: url("../img/agent.webp") no-repeat bottom right/50%;
+      background-color: #F5F5F5;
+
+      @include media-xxl{
+        background-image: none;
+      }
+    }
+
+    &-pseudo{
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 23px;
+      letter-spacing: -0.015em;
+      color: #C3C3C3;
+      max-width: 415px;
+    }
+
+    &-name{
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 39px;
+      letter-spacing: -0.015em;
+      color: #1A1A1A;
+      max-width: 400px;
+    }
+
+    &-desc{
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.015em;
+      color: #414141;
+      max-width: 360px;
+    }
+
+    &-all{
+      font-size: 14px;
+      line-height: 21px;
+      color: white;
+      border-radius: 4px;
+      background: #D92929;
+      padding: 21px 0;
+      width: 272px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      border: 1px solid #D92929;
+
+      @include media-xxl{
+        margin-top: auto;
+      }
+
+      &:hover{
+        background: none;
+        color: #D92929;
+      }
+    }
+  }
+}

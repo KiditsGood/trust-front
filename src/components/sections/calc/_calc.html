@@ -1,0 +1,109 @@
+<section class="calc">
+	<div class="container">
+		<div class="calc__text">
+			<p class="calc__text-title">Сотрудничество начинается с доверия</p>
+			<p class="calc__text-desc">«Траст» входит в состав Российской Гильдии Риэлторов. Стандарты качества услуг компании сертифицированы, деятельность застрахована.</p>
+		</div>
+		<form class="calc__field">
+			<div class="calc__field-settings">
+				<div class="setting__visible">
+					<p class="setting__visible-text">Квартира в новостройке</p>
+					<svg>
+						<use xlink:href="img/sprite.svg#down_arrow">Квартира в новостройке</use>
+					</svg>
+				</div>
+				<div class="setting__hidden">
+					<div class="setting__hidden-buttons">
+						<button type="button" class="setting__button">Жилая</button>
+						<button type="button" class="setting__button">Коммерческая</button>
+					</div>
+					<div class="setting__hidden-item">
+						<div class="setting__check">
+							<input id="s1" type="checkbox" class="setting__check-input">
+							<label for="s1" class="setting__check-label">Квартира в новостройке</label>
+						</div>
+						<div class="setting__check">
+							<input id="s2" type="checkbox" class="setting__check-input">
+							<label for="s2" class="setting__check-label">Квартира во вторичке</label>
+						</div>
+					</div>
+					<div class="setting__hidden-item">
+						<div class="setting__check">
+							<input id="s3" type="checkbox" class="setting__check-input">
+							<label for="s3" class="setting__check-label">Комната</label>
+						</div>
+						<div class="setting__check">
+							<input id="s4" type="checkbox" class="setting__check-input">
+							<label for="s4" class="setting__check-label">Доля</label>
+						</div>
+					</div>
+					<div class="setting__hidden-item">
+						<div class="setting__check">
+							<input id="s5" type="checkbox" class="setting__check-input">
+							<label for="s5" class="setting__check-label">Дом или дача</label>
+						</div>
+						<div class="setting__check">
+							<input id="s6" type="checkbox" class="setting__check-input">
+							<label for="s6" class="setting__check-label">Часть дома</label>
+						</div>
+						<div class="setting__check">
+							<input id="s7" type="checkbox" class="setting__check-input">
+							<label for="s7" class="setting__check-label">Таунхаус</label>
+						</div>
+						<div class="setting__check">
+							<input id="s8" type="checkbox" class="setting__check-input">
+							<label for="s8" class="setting__check-label">Участок</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calc__field-room">
+				<div class="room__visible">
+					<p class="setting__visible-text">Комнатность</p>
+					<svg>
+						<use xlink:href="img/sprite.svg#down_arrow">Квартира в новостройке</use>
+					</svg>
+				</div>
+				<div class="room__hidden">
+					<div class="room__hidden-buttons">
+						<button type="button" class="room__hidden-buttons_item">1</button>
+						<button type="button" class="room__hidden-buttons_item">2</button>
+						<button type="button" class="room__hidden-buttons_item">3</button>
+						<button type="button" class="room__hidden-buttons_item">4</button>
+						<button type="button" class="room__hidden-buttons_item">5+</button>
+					</div>
+					<div class="room__hidden-checkbox">
+						<div class="setting__check">
+							<input id="r1" type="checkbox" class="setting__check-input">
+							<label for="r1" class="setting__check-label">Студия</label>
+						</div>
+						<div class="setting__check">
+							<input id="r2" type="checkbox" class="setting__check-input">
+							<label for="r2" class="setting__check-label">Свободная планировка</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calc__field-cost">
+				<div class="cost__visible">
+					<p class="setting__visible-text">2,3 — 4,7 млн</p>
+				</div>
+				<div class="cost__hidden">
+					<div class="cost__hidden-input">
+						<input type="text" class="cost__hidden-input--price" placeholder="от">
+					</div>
+					<div class="cost__hidden-input">
+						<input type="text" class="cost__hidden-input--price" placeholder="до" value="4 700 000">
+					</div>
+				</div>
+			</div>
+			<div class="calc__field-area">
+				<div class="area__visible">
+					<p class="setting__visible-text">Район</p>
+				</div>
+			</div>
+			<button class="calc__field-button">Поиск</button>
+		</form>
+		@@include('../../bem-blocks/bonus/_bonus.html')
+	</div>
+</section>

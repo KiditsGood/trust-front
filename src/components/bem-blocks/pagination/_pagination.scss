@@ -1,0 +1,31 @@
+.pagination{
+  display: flex;
+  align-items: stretch;
+  gap: 5px;
+  max-width: 1280px;
+  margin: 30px auto 0;
+
+  &__item{
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &.active{
+      background: #DE2727;
+      color: white;
+    }
+
+    &:hover{
+      background: #DE2727;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.manager{
+  display: flex;
+  align-items: stretch;
+  gap: 36px;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &__photo{
+    width: 185px;
+    height: 185px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-name{
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: -0.05em;
+      color: #1A1A1A;
+    }
+
+    &-job{
+      font-size: 12px;
+      line-height: 17px;
+      color: #727272;
+      max-width: 280px;
+    }
+
+    &-reviews{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .stars{
+        display: flex;
+        align-items: stretch;
+        gap: 0;
+
+        &__item{
+          width: 18px;
+          height: 18px;
+
+          &:not(:last-child){
+            fill: #D92929;
+          }
+
+          &:last-child{
+            fill: #D9D9D9;
+          }
+        }
+      }
+
+      &_grade{
+        font-size: 14px;
+        line-height: 20px;
+
+        & span{
+          color: #D92929;
+        }
+      }
+    }
+
+    .experience{
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      margin-top: auto;
+
+      &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+
+        &-name{
+          font-size: 12px;
+          line-height: 17px;
+          color: #727272;
+        }
+
+        &-value{
+          font-size: 21px;
+          font-weight: 600;
+          line-height: 25px;
+          letter-spacing: -0.02em;
+          color: #000000;
+        }
+      }
+    }
+  }
+}

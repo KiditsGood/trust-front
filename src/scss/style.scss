@@ -1,0 +1,31 @@
+// Global Imports
+
+@import "media";
+@import "colors";
+@import "fonts";
+@import "global";
+
+// Sections
+
+@import "./src/components/header/header";
+@import "./src/components/footer/footer";
+@import "./src/components/sections/calc/calc";
+@import "./src/components/sections/question/question";
+@import "./src/components/sections/exclusive/exclusive";
+@import "./src/components/sections/pluses/pluses";
+@import "./src/components/sections/know/know";
+@import "./src/components/sections/news/news";
+@import "./src/components/sections/crumbs/crumbs";
+@import "./src/components/sections/catalog/catalog";
+@import "./src/components/sections/feedback/feedback";
+@import "./src/components/sections/profile/profile";
+
+// Components
+
+@import "./src/components/bem-blocks/bonus/bonus";
+@import "./src/components/bem-blocks/mini-catalog/mini-catalog";
+@import "./src/components/bem-blocks/catalog-filter/catalog-filter";
+@import "./src/components/bem-blocks/products/products";
+@import "./src/components/bem-blocks/pagination/pagination";
+@import "./src/components/bem-blocks/manager/manager";
+@import "./src/components/bem-blocks/profile-tabs/profile-tabs";

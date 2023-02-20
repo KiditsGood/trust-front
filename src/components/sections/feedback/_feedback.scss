@@ -1,0 +1,72 @@
+.feedback{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 65px auto;
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;
+
+    &-title{
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 43px;
+
+      &.red{
+        color: #DE2727;
+        margin-top: -15px;
+      }
+    }
+
+    &-desc{
+      font-size: 14px;
+      line-height: 21px;
+      color: #838383;
+      margin-bottom: 10px;
+    }
+
+    &-input{
+      font-size: 14px;
+      line-height: 17px;
+      background: #F5F5F5;
+      border-radius: 4px;
+      padding: 19px 20px;
+      box-sizing: border-box;
+      max-width: 362px;
+    }
+
+    &-button{
+      font-size: 14px;
+      line-height: 17px;
+      color: white;
+      background: #DE2727;
+      width: 100%;
+      max-width: 362px;
+      padding: 19px 0;
+      border-radius: 4px;
+      border: 1px solid #DE2727;
+      box-sizing: border-box;
+
+      &:hover{
+        background: none;
+        color: #DE2727;
+      }
+    }
+
+    &-personal{
+      font-size: 12px;
+      line-height: 19px;
+      color: #838383;
+      max-width: 275px;
+
+      &_link{
+        color: #DE2727;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.crumbs{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1280px;
+  margin: 28px auto;
+
+  &__item{
+    font-size: 12px;
+    line-height: 14px;
+    color: #838383;
+    position: relative;
+
+    &:not(:last-child):hover{
+      color: #dc1919;
+    }
+
+    &:not(:last-child):after{
+      content: '/';
+      font-size: 12px;
+      line-height: 14px;
+      position: absolute;
+      right: -12px;
+    }
+  }
+}
