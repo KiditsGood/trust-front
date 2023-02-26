@@ -1,0 +1,15 @@
+.profile{
+  &__field{
+    background: #F5F5F5;
+    padding: 29px 0;
+    margin: 15px 0;
+
+    & > .container{
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+}
